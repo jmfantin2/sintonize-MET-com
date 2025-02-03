@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ .Params.description }}" />
+    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+  </head>
+  <body>
+    <!-- Header com gradiente dourado e texto centralizado 
+    <header
+      style="
+        background-image: linear-gradient(45deg, #b27f2e, #ddb266);
+        text-align: center;
+        padding: 20px;
+      "
+    >
+      <h1 style="color: #000">Maurício Seixas | Advogado Criminal</h1>
+    </header> -->
+
+    <main>{{ block "main" . }}{{ .Content }}{{ end }}</main>
+
+    <!-- Footer com gradiente dourado e texto centralizado -->
+    <footer
+      style="
+        background-image: linear-gradient(45deg, #b27f2e, #ddb266);
+        text-align: center;
+        padding: 20px;
+      "
+    >
+      <p style="color: #000">
+        &copy; 2024 Maurício Russell Seixas<br />Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
