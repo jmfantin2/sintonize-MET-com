@@ -1,0 +1,100 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  padding: 0;
+  overflow-x: hidden; /* Remove scroll horizontal */
+}
+
+/* Garantir que o banner ocupe toda a largura e altura inicial */
+#banner {
+  position: relative;
+  width: 100vw; /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('/public/images/banner.jpg') center/cover no-repeat; /* Sobreposição escura + imagem */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Corrigir o conteúdo centralizado */
+.banner-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%; /* Ajusta largura máxima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+.greeting {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.5rem;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.details {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f1c40f;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffd83c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #banner {
+    height: auto; /* Permite que a altura se ajuste */
+    min-height: 100vh; /* Garante que ocupa pelo menos a altura da viewport */
+  }
+
+  .banner-container {
+    max-width: 100%; /* Permite ocupar toda a largura */
+    padding: 10px; /* Reduz padding */
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle,
+  .details {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+}
