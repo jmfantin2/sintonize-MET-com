@@ -16,10 +16,10 @@ body {
   align-items: center; /* Centraliza verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('/public/images/banner.jpg') center/cover no-repeat; /* Sobreposição escura + imagem */
+    url('/public/images/banner.jpg') center/contain no-repeat; /* Ajuste: 'contain' para adaptação */
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: hidden; /* Remove overflow */
 }
 
 /* Corrigir o conteúdo centralizado */
@@ -75,8 +75,9 @@ body {
 /* Responsividade */
 @media (max-width: 768px) {
   #banner {
-    height: auto; /* Permite que a altura se ajuste */
-    min-height: 100vh; /* Garante que ocupa pelo menos a altura da viewport */
+    height: 60vh; /* Reduz a altura em telas pequenas */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('/public/images/banner.jpg') center/cover no-repeat; /* Volta a 'cover' */
   }
 
   .banner-container {
