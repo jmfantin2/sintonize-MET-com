@@ -25,6 +25,20 @@
     <meta name="twitter:title" content="{{ site.twitter_title }}" />
     <meta name="twitter:description" content="{{ site.twitter_description }}" />
     <meta name="twitter:image" content="{{ site.twitter_image }}" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2Q05KBG6Z3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-2Q05KBG6Z3');
+    </script>
   </head>
   <body>
     {{ content | safe }}
