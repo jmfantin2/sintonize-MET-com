@@ -1,0 +1,33 @@
+# Parâmetros de SEO
+site_name: 'Workshop Sintonize | Tamara Bitencourt'
+site_description: >
+  O Workshop Sintonize é um evento online para profissionais da educação que
+  buscam equilíbrio emocional, bem-estar e soluções práticas para os desafios da sala de aula.
+site_url: 'https://sintonize.marcelaetamara.com' # Substitua pelo domínio do site em produção
+# Favicon e logo
+favicon: '/public/favicon.png'
+logo: '/public/images/instructor.jpg'
+
+# Open Graph (og) - Para compartilhamento em redes sociais
+og_title: 'Workshop Sintonize - Bem-estar e Equilíbrio Emocional'
+og_description: >
+  Participe do Workshop Sintonize e dê o primeiro passo para uma jornada de bem-estar
+  e equilíbrio emocional. Online e acessível para profissionais da educação.
+og_image: '/public/images/instructor.jpg' # Imagem compartilhada nas redes sociais
+og_type: 'website'
+og_url: 'https://www.seusite.com' # Substitua pelo domínio do site
+
+# Twitter Card
+twitter_card: 'summary_large_image'
+twitter_title: 'Workshop Sintonize - Bem-estar e Equilíbrio Emocional'
+twitter_description: >
+  Um workshop especialmente desenvolvido para profissionais da educação que
+  valorizam o equilíbrio emocional e a qualidade de vida.
+twitter_image: '/public/images/instructor.jpg'
+# Robots e indexação
+robots: 'index, follow' # Permitir indexação
+sitemap: 'https://sintonize.marcelaetamara.com/sitemap.xml' # Substitua pelo link para o sitemap
+
+# Outros
+language: 'pt-BR'
+author: 'Tamara Bitencourt'
