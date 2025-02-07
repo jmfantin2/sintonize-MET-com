@@ -48,7 +48,10 @@ layout: 'base.njk'
         alunos e colegas.
       </li>
     </ul>
-    <a href="https://wa.me/555193164924" target="_blank" class="contact-button"
+    <a
+      href="https://api.whatsapp.com/send?phone=555193164924&text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20Workshop%20Sintonize."
+      target="_blank"
+      class="contact-button"
       >Quer falar comigo antes? Clica aqui!</a
     >
   </div>
@@ -127,3 +130,30 @@ layout: 'base.njk'
     </footer>
   </div>
 </section>
+
+<a
+  href="https://api.whatsapp.com/send?phone=555193164924&text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20Workshop%20Sintonize."
+  target="_blank"
+  style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    z-index: 1000;
+    overflow: hidden;
+    transition: opacity 0.3s ease; /* Suaviza a transição */
+  "
+  onmouseover="this.style.opacity='0.9';"
+  onmouseout="this.style.opacity='1';"
+>
+  <img
+    src="/public/images/whatsapp.png"
+    alt="WhatsApp logo"
+    style="max-width: 60px"
+  />
+</a>
