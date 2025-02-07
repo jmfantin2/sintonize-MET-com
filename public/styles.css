@@ -11,10 +11,10 @@ body {
 #banner {
   position: relative;
   width: 100vw;
-  height: 100vh; /* Padrão para telas pequenas */
+  height: 100vh; /* Altura total para telas grandes */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url('/public/images/banner.jpg') center/cover no-repeat;
   margin: 0;
@@ -190,9 +190,8 @@ body {
 /* * Responsividade até 768*/
 @media (max-width: 768px) {
   #banner {
-    height: 80vh; /* Menor altura para evitar o efeito de fim do site */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('/public/images/banner.jpg') center/cover no-repeat; /* Evita espaços */
+    background-position: left center; /* Mostra mais a parte esquerda da imagem */
+    height: 60vh; /* Reduz a altura em telas pequenas */
   }
 
   .banner-container {
