@@ -57,7 +57,7 @@ body {
 }
 
 .details {
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
@@ -203,9 +203,11 @@ body {
     font-size: 2rem;
   }
 
-  .subtitle,
-  .details {
+  .subtitle {
     font-size: 1rem;
+  }
+  .details {
+    font-size: 1.2rem;
   }
 
   .cta-button {
