@@ -69,6 +69,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   padding: 10px 20px;
+  margin: 10px 10px 20px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
@@ -79,9 +80,22 @@ body {
 
 /* * Benefits Section */
 #benefits {
-  padding: 40px 20px;
+  padding: 20px;
   background-color: #f9f9f9; /* Fundo claro */
   text-align: center;
+}
+#benefits h2 {
+  color: #222; /* Preto suave para leitura */
+  text-align: left;
+}
+#benefits p {
+  color: #222; /* Preto suave para leitura */
+  text-align: justify;
+}
+
+.benefits-list li {
+  color: #000; /* Preto para máxima legibilidade */
+  font-size: 1rem;
 }
 
 .benefits-container {
@@ -120,6 +134,48 @@ body {
 
 .contact-button:hover {
   background-color: #218838; /* Verde mais escuro no hover */
+}
+
+/* * Objectives Section */
+#objectives {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo claro */
+  text-align: center;
+}
+#objectives h2 {
+  color: #222; /* Preto suave para leitura */
+  text-align: left;
+}
+#objectives p {
+  color: #222; /* Preto suave para leitura */
+  text-align: left;
+}
+
+.objectives-list li {
+  color: #000; /* Preto para máxima legibilidade */
+  font-size: 1rem;
+  text-align: left;
+}
+
+.objectives-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.objectives-list {
+  list-style: none; /* Remove os marcadores padrão */
+  padding: 0;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.objectives-list li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaçamento entre o emoji e o texto */
+  color: #000;
 }
 
 /* * Instructor Section */
@@ -196,7 +252,9 @@ body {
 
   .banner-container {
     max-width: 100%; /* Permite ocupar toda a largura */
-    padding: 10px; /* Reduz padding */
+    padding-top: 120px;
+    padding-right: 40px; /* Reduz padding */
+    padding-left: 40px; /* Reduz padding */
   }
 
   .title {
@@ -251,6 +309,10 @@ body {
   background-color: #f9f9f9; /* Fundo claro */
   text-align: center;
 }
+#finally p {
+  color: #000;
+  text-align: justify;
+}
 
 .finally-container {
   max-width: 1200px;
@@ -275,7 +337,8 @@ body {
 .feature {
   background-color: #f4f4f4; /* Fundo dos cards */
   border-radius: 10px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   flex: 1;
   min-width: 250px;
   max-width: 300px;
@@ -286,8 +349,8 @@ body {
 .feature h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
   color: #000;
+  text-align: right;
 }
 
 .feature p {
@@ -345,11 +408,12 @@ footer p {
 
 .old-price {
   text-decoration: line-through;
-  color: #f1c40f;
+  color: #ddd;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .new-price {
-  font-size: 2rem;
   font-weight: bold;
   color: #fff;
 }
@@ -373,4 +437,104 @@ footer p {
 
 .cta-button:hover {
   background-color: #ffd83c;
+}
+
+#evidences {
+  background-color: #000;
+  padding: 5px;
+  text-align: center;
+}
+
+.evidences-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.evidence-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.evidence-item {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.evidence-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.evidence-links a {
+  display: block;
+  font-size: 1rem;
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.evidence-links a:hover {
+  color: #f1c40f;
+}
+
+/* Finally Section */
+#pqp {
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo claro */
+  text-align: center;
+}
+#pqp p {
+  color: #000;
+  text-align: justify;
+}
+
+.pqp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pqp-container h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.pqp-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.pqp-feature {
+  background-color: #f4f4f4; /* Fundo dos cards */
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.pqp-feature h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.pqp-feature p {
+  font-size: 0.9rem;
+  color: #666; /* Texto cinza */
 }
