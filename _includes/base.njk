@@ -13,49 +13,18 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ site.og_title }}" />
+    <meta property="og:description" content="{{ site.og_description }}" />
+    <meta property="og:image" content="{{ site.og_image }}" />
+    <meta property="og:url" content="{{ site.site_url }}" />
+    <meta property="og:type" content="{{ site.og_type }}" />
 
-    <!-- Open Graph (OG) - Compartilhamento no WhatsApp, Facebook -->
-    <meta
-      property="og:title"
-      content="{{ site.og_title | default : site.site_name }}"
-    />
-    <meta
-      property="og:description"
-      content="{{ site.og_description | default : site.site_description }}"
-    />
-    <meta
-      property="og:image"
-      content="{{ site.og_image | default : '/public/images/instructor.jpg' }}"
-    />
-    <meta
-      property="og:url"
-      content="{{
-        site.site_url | default : 'https://sintonize.proftamara.com'
-      }}"
-    />
-    <meta
-      property="og:type"
-      content="{{ site.og_type | default : 'website' }}"
-    />
-
-    <!-- Twitter Card - Compatibilidade com Twitter/X -->
-    <meta
-      name="twitter:card"
-      content="{{ site.twitter_card | default : 'summary_large_image' }}"
-    />
-    <meta
-      name="twitter:title"
-      content="{{ site.twitter_title | default : site.site_name }}"
-    />
-    <meta
-      name="twitter:description"
-      content="{{ site.twitter_description | default : site.site_description }}"
-    />
-    <meta
-      name="twitter:image"
-      content="{{ site.twitter_image | default : site.og_image }}"
-    />
-
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="{{ site.twitter_card }}" />
+    <meta name="twitter:title" content="{{ site.twitter_title }}" />
+    <meta name="twitter:description" content="{{ site.twitter_description }}" />
+    <meta name="twitter:image" content="{{ site.twitter_image }}" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -67,11 +36,13 @@
         dataLayer.push(arguments);
       }
       gtag('js', new Date());
+
       gtag('config', 'AW-739658785');
     </script>
-
-    <!-- Google Ads Conversion Event -->
+    <!-- Google tag (gtag.js) event - delayed navigation helper -->
     <script>
+      // Helper function to delay opening a URL until a gtag event is sent.
+      // Call it in response to an action that should navigate to a URL.
       function gtagSendEvent(url) {
         var callback = function () {
           if (typeof url === 'string') {
@@ -81,6 +52,7 @@
         gtag('event', 'ads_conversion_Contato_1', {
           'event_callback': callback,
           'event_timeout': 2000,
+          // <event_parameters>
         });
         return false;
       }
