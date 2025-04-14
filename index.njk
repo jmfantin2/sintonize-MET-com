@@ -4,298 +4,376 @@ layout: 'base.njk'
 ---
 
 <!-- index.njk -->
-<section id="banner">
-  <div class="banner-container">
-    <img
-      class="logo"
-      src="/public/images/logo-white.png"
-      alt="Logo Tamara Bitencourt"
-    />
-    <h1 class="title">
-      Não deixe o estresse comprometer sua paixão pela Educação
-    </h1>
-    <p class="subtitle">
-      Sabemos que transtornos emocionais são uma das principais causas de
-      afastamento de professores.
-    </p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop Sintonize | Tamara Bitencourt</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- VSL Section -->
+    <section id="vsl-section">
+      <div
+        class="vsl-player-container"
+        style="max-width: 960px; margin: 40px auto"
+      >
+        <div class="vsl-wrapper">
+          <div class="youtube-wrapper">
+            <iframe
+              id="youtube-vsl"
+              src="https://www.youtube.com/embed/4GamC_kS30w?autoplay=1&mute=1&controls=0&rel=0&showinfo=0&enablejsapi=1"
+              title="VSL Video"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-<section id="benefits">
-  <div class="benefits-container">
-    <h2>
-      Descubra como recuperar seu bem-estar e equilíbrio emocional na sala de
-      aula
-    </h2>
-    <p>
-      Como professora, você enfrenta diariamente desafios que podem afetar sua
-      saúde mental e emocional. Estudos revelam que 66% dos educadores já
-      precisaram se afastar do trabalho por questões de saúde, como ansiedade,
-      estresse e depressão. Além disso, a síndrome de burnout atinge cerca de um
-      terço dos professores da educação básica, comprometendo não apenas a
-      qualidade de vida, mas também o desempenho profissional.
-    </p>
-  </div>
+          <div class="vsl-overlay z-10 absolute inset-0"></div>
+          <button id="vsl-unmute" class="unmute-button">
+            <span>🔊 Toque para ativar o som</span>
+          </button>
+          <div id="vsl-progress-bar">
+            <div id="vsl-progress"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <a
-    href="#offer"
-    class="cta-button-end"
-    onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
-  >
-    QUERO GARANTIR A MINHA VAGA
-  </a>
-</section>
-
-<section id="evidences">
-  <div class="evidences-container">
-    <div class="evidence-links">
-      <div class="evidence-item">
+    <section id="banner">
+      <div class="banner-container">
         <img
-          src="https://thumbor.novaescola.org.br/G1__aH9XXwCGA6wAlYjZSLFPElY=/nova-escola-producao.s3.amazonaws.com/YASskBkUeKW8AYffUsJqHN8WMpf6C33EzJfXdqADE2qrmp5J3mmZNcVJUaU2/professora-em-sala-de-aula-na-uerj.jpg"
-          alt="Professora em sala de aula"
-          class="evidence-image"
+          class="logo"
+          src="/public/images/logo-white.png"
+          alt="Logo Tamara Bitencourt"
         />
-        <a
-          href="https://novaescola.org.br/conteudo/12302/pesquisa-indica-que-66-dos-professores-ja-precisaram-se-afastar-devido-a-problemas-de-saude"
-          target="_blank"
-          >Nova Escola: Pesquisa indica que 66% dos professores já precisaram se
-          afastar devido a problemas de saúde</a
-        >
+        <h1 class="title">
+          Não deixe o estresse comprometer sua paixão pela Educação
+        </h1>
+        <p class="subtitle">
+          Sabemos que transtornos emocionais são uma das principais causas de
+          afastamento de professores.
+        </p>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="benefits-container">
+        <h2>
+          Descubra como recuperar seu bem-estar e equilíbrio emocional na sala
+          de aula
+        </h2>
+        <p>
+          Como professora, você enfrenta diariamente desafios que podem afetar
+          sua saúde mental e emocional. Estudos revelam que 66% dos educadores
+          já precisaram se afastar do trabalho por questões de saúde, como
+          ansiedade, estresse e depressão. Além disso, a síndrome de burnout
+          atinge cerca de um terço dos professores da educação básica,
+          comprometendo não apenas a qualidade de vida, mas também o desempenho
+          profissional.
+        </p>
       </div>
 
-      <div class="evidence-item">
-        <img
-          src="https://resetfest.com/wp-content/uploads/2020/01/cover-3.jpg"
-          alt="Estresse e burnout em professores"
-          class="evidence-image"
-        />
+      <a
+        href="#offer"
+        class="cta-button-end"
+        onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
+      >
+        QUERO GARANTIR A MINHA VAGA
+      </a>
+    </section>
+
+    <section id="evidences">
+      <div class="evidences-container">
+        <div class="evidence-links">
+          <div class="evidence-item">
+            <img
+              src="https://thumbor.novaescola.org.br/G1__aH9XXwCGA6wAlYjZSLFPElY=/nova-escola-producao.s3.amazonaws.com/YASskBkUeKW8AYffUsJqHN8WMpf6C33EzJfXdqADE2qrmp5J3mmZNcVJUaU2/professora-em-sala-de-aula-na-uerj.jpg"
+              alt="Professora em sala de aula"
+              class="evidence-image"
+            />
+            <a
+              href="https://novaescola.org.br/conteudo/12302/pesquisa-indica-que-66-dos-professores-ja-precisaram-se-afastar-devido-a-problemas-de-saude"
+              target="_blank"
+              >Nova Escola: Pesquisa indica que 66% dos professores já
+              precisaram se afastar devido a problemas de saúde</a
+            >
+          </div>
+
+          <div class="evidence-item">
+            <img
+              src="https://resetfest.com/wp-content/uploads/2020/01/cover-3.jpg"
+              alt="Estresse e burnout em professores"
+              class="evidence-image"
+            />
+            <a
+              href="https://www.cnnbrasil.com.br/saude/sindrome-de-burnout-atinge-um-a-cada-tres-professores-infantis-aponta-estudo/"
+              target="_blank"
+              >CNN: Síndrome de Burnout atinge um a cada três professores
+              infantis, aponta estudo</a
+            >
+          </div>
+        </div>
+      </div>
+      <a
+        href="#offer"
+        class="cta-button-end"
+        onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
+      >
+        QUERO GARANTIR A MINHA VAGA
+      </a>
+    </section>
+
+    <section id="objectives">
+      <div class="objectives-container">
+        <h2>
+          Este curso foi desenvolvido especialmente para educadores que buscam:
+        </h2>
+        <ul class="objectives-list">
+          <li>
+            ✅ Desenvolver o autocontrole para lidar com situações desafiadoras
+            em sala de aula.
+          </li>
+          <li>
+            ✅ Aplicar estratégias para a autoregulação emocional no ambiente
+            escolar.
+          </li>
+          <li>
+            ✅ Utilizar técnicas práticas para reduzir o estresse e melhorar seu
+            bem-estar no trabalho.
+          </li>
+          <li>✅ Fortalecer sua relação com os alunos e colegas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="objectives" style="padding-top: 0">
+      <div class="objectives-container">
+        <h2>Por que este treinamento é ideal para você?</h2>
+        <ul class="objectives-list">
+          <li>🎓 Terapia Integrativa</li>
+          <li>🌱 Consultoria de Bem-Estar</li>
+          <li>🧭 Mentoria de Desenvolvimento</li>
+          <li>🚀 Coaching</li>
+        </ul>
+        <p>
+          Essa combinação de conhecimentos me permite oferecer ferramentas
+          práticas e eficazes para transformar sua rotina profissional.
+        </p>
+      </div>
+    </section>
+
+    <section id="offer" class="offer-section">
+      <div class="offer-container">
+        <h2 class="offer-title">Investimento e Garantias</h2>
+        <p class="offer-text">
+          O treinamento está disponível de
+          <span class="old-price">R$ 147,00</span> por
+          <span class="new-price">R$ 97,00</span>, com pagamento facilitado via
+          PIX ou cartão de crédito.
+        </p>
+        <p class="offer-subtext">
+          Além disso, oferecemos uma
+          <strong>garantia incondicional de 7 dias.</strong> Se, por qualquer
+          motivo, você não estiver satisfeita, devolvemos
+          <strong>100% do seu investimento</strong>.
+        </p>
         <a
-          href="https://www.cnnbrasil.com.br/saude/sindrome-de-burnout-atinge-um-a-cada-tres-professores-infantis-aponta-estudo/"
+          href="https://payfast.greenn.com.br/92677?b_id_1=106267"
           target="_blank"
-          >CNN: Síndrome de Burnout atinge um a cada três professores infantis,
-          aponta estudo</a
+          class="cta-button"
+          onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
+          >QUERO ME INSCREVER</a
         >
       </div>
-    </div>
-  </div>
-  <a
-    href="#offer"
-    class="cta-button-end"
-    onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
-  >
-    QUERO GARANTIR A MINHA VAGA
-  </a>
-</section>
+    </section>
 
-<section id="objectives">
-  <div class="objectives-container">
-    <h2>
-      Este curso foi desenvolvido especialmente para educadores que buscam:
-    </h2>
-    <ul class="objectives-list">
-      <li>
-        ✅ Desenvolver o autocontrole para lidar com situações desafiadoras em
-        sala de aula.
-      </li>
-      <li>
-        ✅ Aplicar estratégias para a autoregulação emocional no ambiente
-        escolar.
-      </li>
-      <li>
-        ✅ Utilizar técnicas práticas para reduzir o estresse e melhorar seu
-        bem-estar no trabalho.
-      </li>
-      <li>✅ Fortalecer sua relação com os alunos e colegas.</li>
-    </ul>
-  </div>
-</section>
+    <section id="finally">
+      <div class="finally-container">
+        <h2>Depoimentos de quem já participou</h2>
+        <div class="features">
+          <div class="feature">
+            <p>
+              “Eu já estava esgotada e pensando em desistir. O workshop me
+              trouxe ferramentas simples e práticas para lidar com o estresse
+              diário na sala de aula. Hoje, consigo manter a calma e aproveitar
+              mais o que faço.”
+            </p>
+            <h3>Mariana</h3>
+            <p style="text-align: right; padding-top: 0">
+              Professora há 10 anos
+            </p>
+          </div>
+          <div class="feature">
+            <p>
+              "Eu não percebia o quanto minha saúde emocional impactava meu
+              trabalho. Aprendi a me organizar melhor, a ter mais paciência e,
+              principalmente, a cuidar de mim sem culpa."
+            </p>
+            <h3>Ana</h3>
+            <p style="text-align: right; padding-top: 0">Professora infantil</p>
+          </div>
+        </div>
 
-<section id="objectives" style="padding-top: 0">
-  <div class="objectives-container">
-    <h2>Por que este treinamento é ideal para você?</h2>
-    <ul class="objectives-list">
-      <li>🎓 Terapia Integrativa</li>
-      <li>🌱 Consultoria de Bem-Estar</li>
-      <li>🧭 Mentoria de Desenvolvimento</li>
-      <li>🚀 Coaching</li>
-    </ul>
-    <p>
-      Essa combinação de conhecimentos me permite oferecer ferramentas práticas
-      e eficazes para transformar sua rotina profissional.
-    </p>
-  </div>
-</section>
+        <p>
+          Invista em você e na qualidade de ensino que oferece. Clique no botão
+          abaixo e comece agora mesmo sua jornada rumo ao bem-estar e equilíbrio
+          emocional.
+        </p>
+        <p>
+          Lembre-se: você tem <strong>7 dias</strong> para experimentar o curso
+          sem riscos. Se não estiver satisfeita, devolvemos
+          <strong>100% do seu dinheiro</strong>.
+        </p>
 
-<section id="offer" class="offer-section">
-  <div class="offer-container">
-    <h2 class="offer-title">Investimento e Garantias</h2>
-    <p class="offer-text">
-      O treinamento está disponível de
-      <span class="old-price">R$ 147,00</span> por
-      <span class="new-price">R$ 97,00</span>, com pagamento facilitado via PIX
-      ou cartão de crédito.
-    </p>
-    <p class="offer-subtext">
-      Além disso, oferecemos uma
-      <strong>garantia incondicional de 7 dias.</strong> Se, por qualquer
-      motivo, você não estiver satisfeita, devolvemos
-      <strong>100% do seu investimento</strong>.
-    </p>
+        <a
+          href="#offer"
+          class="cta-button-end"
+          onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
+        >
+          QUERO GARANTIR A MINHA VAGA
+        </a>
+      </div>
+    </section>
+
+    <section id="instructor">
+      <div class="instructor-container">
+        <div class="instructor-text">
+          <h2>Um pouco da minha história...</h2>
+          <p>
+            Iniciei minha carreira docente na Educação Infantil, aos 17 anos.
+            Desde lá, acumulei experiências nos Anos Iniciais e Finais do Ensino
+            Fundamental, na Educação de Jovens e Adultos, no Ensino Médio e no
+            Ensino Superior.
+          </p>
+          <p>
+            Em 2012, abri minha primeira empresa de consultoria pedagógica que,
+            embora com reformulações e atualizações, administro até hoje.
+          </p>
+          <p>
+            Ao longo destes anos, estive em diferentes estados, municípios e
+            escolas fazendo palestras para professores, coordenadores
+            pedagógicos e gestores escolares.
+          </p>
+          <p>
+            Além da formação de professores, atuo como Terapeuta Integrativa,
+            Consultora de Bem-estar, Mentora de Desenvolvimento e Coach.
+          </p>
+          <p>
+            Sou casada com o Vinícius, mãe do Matheus (16 anos) e madrasta da
+            Bruna (20 anos), do Eduardo (11 anos) e do Gabriel (9 anos).
+          </p>
+        </div>
+        <div class="instructor-image">
+          <img src="/public/images/instructor.jpg" alt="Foto da instrutora" />
+        </div>
+      </div>
+    </section>
+
+    <section id="pqp">
+      <div class="pqp-container">
+        <h2>Perguntas frequentes</h2>
+        <div class="pqp-features">
+          <div class="pqp-feature">
+            <h3>O curso é totalmente online?</h3>
+            <p>
+              Sim, você pode acessar todo o conteúdo de qualquer lugar e a
+              qualquer momento.
+            </p>
+          </div>
+          <div class="pqp-feature">
+            <h3>Preciso de algum conhecimento prévio?</h3>
+            <p>
+              Não, o curso foi elaborado para ser acessível a todas as
+              professoras, independentemente de sua experiência.
+            </p>
+          </div>
+          <div class="pqp-feature">
+            <h3>Receberei certificado ao concluir o curso?</h3>
+            <p>
+              Sim, após a conclusão, você receberá um certificado de
+              participação.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          Não perca esta oportunidade de transformar sua vida profissional e
+          pessoal. Junte-se a outras educadoras que já estão colhendo os
+          benefícios de uma mente equilibrada e saudável.
+        </p>
+
+        <a
+          href="#offer"
+          class="cta-button-end"
+          onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
+        >
+          QUERO GARANTIR A MINHA VAGA
+        </a>
+      </div>
+    </section>
+
     <a
-      href="https://payfast.greenn.com.br/92677?b_id_1=106267"
+      href="https://api.whatsapp.com/send?phone=555193164924&text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20Workshop%20Sintonize."
       target="_blank"
-      class="cta-button"
-      onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
-      >QUERO ME INSCREVER</a
+      style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #fff;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        z-index: 1000;
+        overflow: hidden;
+        transition: opacity 0.3s ease; /* Suaviza a transição */
+      "
+      onmouseover="this.style.opacity='0.9';"
+      onmouseout="this.style.opacity='1';"
     >
-  </div>
-</section>
-
-<section id="finally">
-  <div class="finally-container">
-    <h2>Depoimentos de quem já participou</h2>
-    <div class="features">
-      <div class="feature">
-        <p>
-          “Eu já estava esgotada e pensando em desistir. O workshop me trouxe
-          ferramentas simples e práticas para lidar com o estresse diário na
-          sala de aula. Hoje, consigo manter a calma e aproveitar mais o que
-          faço.”
-        </p>
-        <h3>Mariana</h3>
-        <p style="text-align: right; padding-top: 0">Professora há 10 anos</p>
-      </div>
-      <div class="feature">
-        <p>
-          "Eu não percebia o quanto minha saúde emocional impactava meu
-          trabalho. Aprendi a me organizar melhor, a ter mais paciência e,
-          principalmente, a cuidar de mim sem culpa."
-        </p>
-        <h3>Ana</h3>
-        <p style="text-align: right; padding-top: 0">Professora infantil</p>
-      </div>
-    </div>
-
-    <p>
-      Invista em você e na qualidade de ensino que oferece. Clique no botão
-      abaixo e comece agora mesmo sua jornada rumo ao bem-estar e equilíbrio
-      emocional.
-    </p>
-    <p>
-      Lembre-se: você tem <strong>7 dias</strong> para experimentar o curso sem
-      riscos. Se não estiver satisfeita, devolvemos
-      <strong>100% do seu dinheiro</strong>.
-    </p>
-
-    <a
-      href="#offer"
-      class="cta-button-end"
-      onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
-    >
-      QUERO GARANTIR A MINHA VAGA
+      <img
+        src="/public/images/whatsapp.png"
+        alt="WhatsApp logo"
+        style="max-width: 60px"
+      />
     </a>
-  </div>
-</section>
+    <script>
+      // Esperar o YouTube Iframe API carregar
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-<section id="instructor">
-  <div class="instructor-container">
-    <div class="instructor-text">
-      <h2>Um pouco da minha história...</h2>
-      <p>
-        Iniciei minha carreira docente na Educação Infantil, aos 17 anos. Desde
-        lá, acumulei experiências nos Anos Iniciais e Finais do Ensino
-        Fundamental, na Educação de Jovens e Adultos, no Ensino Médio e no
-        Ensino Superior.
-      </p>
-      <p>
-        Em 2012, abri minha primeira empresa de consultoria pedagógica que,
-        embora com reformulações e atualizações, administro até hoje.
-      </p>
-      <p>
-        Ao longo destes anos, estive em diferentes estados, municípios e escolas
-        fazendo palestras para professores, coordenadores pedagógicos e gestores
-        escolares.
-      </p>
-      <p>
-        Além da formação de professores, atuo como Terapeuta Integrativa,
-        Consultora de Bem-estar, Mentora de Desenvolvimento e Coach.
-      </p>
-      <p>
-        Sou casada com o Vinícius, mãe do Matheus (16 anos) e madrasta da Bruna
-        (20 anos), do Eduardo (11 anos) e do Gabriel (9 anos).
-      </p>
-    </div>
-    <div class="instructor-image">
-      <img src="/public/images/instructor.jpg" alt="Foto da instrutora" />
-    </div>
-  </div>
-</section>
+      let player;
 
-<section id="pqp">
-  <div class="pqp-container">
-    <h2>Perguntas frequentes</h2>
-    <div class="pqp-features">
-      <div class="pqp-feature">
-        <h3>O curso é totalmente online?</h3>
-        <p>
-          Sim, você pode acessar todo o conteúdo de qualquer lugar e a qualquer
-          momento.
-        </p>
-      </div>
-      <div class="pqp-feature">
-        <h3>Preciso de algum conhecimento prévio?</h3>
-        <p>
-          Não, o curso foi elaborado para ser acessível a todas as professoras,
-          independentemente de sua experiência.
-        </p>
-      </div>
-      <div class="pqp-feature">
-        <h3>Receberei certificado ao concluir o curso?</h3>
-        <p>
-          Sim, após a conclusão, você receberá um certificado de participação.
-        </p>
-      </div>
-    </div>
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-vsl', {
+          events: {
+            onReady: onPlayerReady,
+          },
+        });
+      }
 
-    <p>
-      Não perca esta oportunidade de transformar sua vida profissional e
-      pessoal. Junte-se a outras educadoras que já estão colhendo os benefícios
-      de uma mente equilibrada e saudável.
-    </p>
+      function onPlayerReady(event) {
+        const unmuteButton = document.getElementById('vsl-unmute');
+        unmuteButton.addEventListener('click', () => {
+          player.unMute();
+          unmuteButton.style.display = 'none';
+        });
 
-    <a
-      href="#offer"
-      class="cta-button-end"
-      onclick="gtag_report_conversion('https://payfast.greenn.com.br/92677?b_id_1=106267');"
-    >
-      QUERO GARANTIR A MINHA VAGA
-    </a>
-  </div>
-</section>
-
-<a
-  href="https://api.whatsapp.com/send?phone=555193164924&text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20Workshop%20Sintonize."
-  target="_blank"
-  style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #fff;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    z-index: 1000;
-    overflow: hidden;
-    transition: opacity 0.3s ease; /* Suaviza a transição */
-  "
-  onmouseover="this.style.opacity='0.9';"
-  onmouseout="this.style.opacity='1';"
->
-  <img
-    src="/public/images/whatsapp.png"
-    alt="WhatsApp logo"
-    style="max-width: 60px"
-  />
-</a>
+        // Sincronizar barra de progresso
+        const progress = document.getElementById('vsl-progress');
+        setInterval(() => {
+          const duration = player.getDuration();
+          const currentTime = player.getCurrentTime();
+          const percent = (currentTime / duration) * 100;
+          progress.style.width = percent + '%';
+        }, 500);
+      }
+    </script>
+  </body>
+</html>
